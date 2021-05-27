@@ -1,0 +1,115 @@
+body {
+  box-sizing: border-box;
+  background: url('https://images2.alphacoders.com/261/thumb-1920-26102.jpg');
+  background-size: cover;
+}
+
+header p {
+    box-sizing: border-box;
+  text-align: center;
+  margin-top: 40px;
+}
+
+header img {
+ max-width: 100%;
+}
+
+.containerLogin {
+  box-shadow: 13px 14px 5px -2px rgba(0, 0, 0, 0.43);
+  -webkit-box-shadow: 13px 14px 5px -2px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: 13px 14px 5px -2px rgba(0, 0, 0, 0.43);
+
+  max-width: 550px;
+  min-height: 350px;
+
+  background: url('https://s1.1zoom.me/big0/560/Texture_Book_500852.jpg');
+  border: 2px solid #fff;
+  border-radius: 15px;
+  text-align: justify;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 60px;
+  padding-top: 2.6rem;
+}
+
+.forms {
+  background: url('https://image.freepik.com/fotos-gratis/fundo-das-paginas-do-livro_8119-866.jpg');
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  padding: 1rem;
+
+  max-width: 400px;
+  min-height: 250px;
+
+  border-radius: 5px;
+  border: 2px solid #000;
+}
+
+.labelName,
+.labelPassword {
+  color: #000;
+  font-family: Helvetica, sans-serif;
+  font-size: 2rem;
+  padding-bottom: 0.2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.inputName,
+.inputPassword {
+  padding-bottom: 2rem;
+}
+
+.inputName input,
+.inputPassword input {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 30px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 700;
+
+  transition: filter ease 0.6s;
+}
+
+.inputName input:hover,
+.inputPassword input:hover {
+  filter: brightness(0.5);
+  transition: filter ease 0.6s;
+}
+
+.button input {
+  padding: 0.6rem;
+  font-size: 1.2rem;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  cursor: pointer;
+}
+
+.button a {
+  text-decoration: none;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+}
+
+footer p {
+  color: #fff;
+}
+
+
+table{
+    background: rgba(0, 0, 0, 0.548);
+    font-weight: 700;
+}
