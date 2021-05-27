@@ -5,7 +5,7 @@ function welcome() {
     let userPassword = document.getElementById('userPassword').value
     let userList = ['David', 'Atila', 'Raphael', 'Luis']
 
-    if (!userName || !userPassword) {
+    if (!userName || !gituserPassword) {
         alert('Você não digitou o seu nome ou sua senha, favor, faça isto antes de continuar.')
     }
     else {
