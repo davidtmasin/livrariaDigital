@@ -1,13 +1,27 @@
-body {
+*{
   box-sizing: border-box;
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  
+  /* box-sizing: border-box; */
   background: url('https://images2.alphacoders.com/261/thumb-1920-26102.jpg');
   background-size: cover;
 }
+#root{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
 
 header p {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
   text-align: center;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 header img {
@@ -15,12 +29,13 @@ header img {
 }
 
 .containerLogin {
+  
   box-shadow: 13px 14px 5px -2px rgba(0, 0, 0, 0.43);
   -webkit-box-shadow: 13px 14px 5px -2px rgba(0, 0, 0, 0.43);
   -moz-box-shadow: 13px 14px 5px -2px rgba(0, 0, 0, 0.43);
 
-  max-width: 550px;
-  min-height: 350px;
+  min-width: 530px;
+  min-height: 300px;
 
   background: url('https://s1.1zoom.me/big0/560/Texture_Book_500852.jpg');
   border: 2px solid #fff;
@@ -30,11 +45,12 @@ header img {
   margin-right: auto;
   margin-left: auto;
   margin-top: 60px;
-  padding-top: 2.6rem;
+  padding: 1.5rem 0;
 }
 
 .forms {
-  background: url('https://image.freepik.com/fotos-gratis/fundo-das-paginas-do-livro_8119-866.jpg');
+  
+  background: url('https://media.istockphoto.com/photos/texture-of-vintage-cream-paper-gentle-shade-for-watercolor-and-picture-id661031298?k=6&m=661031298&s=170667a&w=0&h=_8tQtJrgpKtRAUcaRkuNSCZCOzkUImpv6_JkzLybT4g=');
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -49,7 +65,20 @@ header img {
   border: 2px solid #000;
 }
 
-.labelName,
+.fieldForm{
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+fieldset{
+  border: 2px solid rgb(59, 48, 18);
+}
+legend{
+  font-weight: 700;
+  color: rgb(87, 41, 8);
+  padding-bottom: 15px;
+}
+
+/* .labelName,
 .labelPassword {
   color: #000;
   font-family: Helvetica, sans-serif;
@@ -57,7 +86,7 @@ header img {
   padding-bottom: 0.2rem;
   font-weight: 700;
   text-align: center;
-}
+} */
 
 .inputName,
 .inputPassword {
@@ -71,7 +100,6 @@ header img {
   margin-right: auto;
   width: 200px;
   height: 30px;
-  font-family: Helvetica, Arial, sans-serif;
   font-weight: 700;
 
   transition: filter ease 0.6s;
@@ -86,13 +114,23 @@ header img {
 .button input {
   padding: 0.6rem;
   font-size: 1.2rem;
-  font-family: Helvetica, Arial, sans-serif;
   font-weight: 700;
   display: block;
   margin-left: auto;
   margin-right: auto;
-
+  border-radius: 12px;
   cursor: pointer;
+
+  background-color: rgb(233, 148, 68);
+  color: #fff;
+  transition: all ease .3s;
+  }
+
+.button input:hover{
+  filter: brightness(2.5);
+  border: 2px solid #000;
+  color: #000;
+  transition: all ease .3s;
 }
 
 .button a {
@@ -100,12 +138,15 @@ header img {
 }
 
 footer {
-  position: absolute;
+  position: relative;
   bottom: 0;
 }
 
 footer p {
   color: #fff;
+  margin: 40px 0 0 0px;
+  padding: 2px 0;
+  background-color: rgb(0, 0, 0);
 }
 
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="nofollow, noindex" />
@@ -8,50 +9,50 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Login - Livraria Digital</title>
 </head>
+
 <body>
-    <header>
-        <p>
-            <img src="./assets/img/header.png" alt="Livraria Digital">
-        </p>
-    </header>
+    <div id="root">
 
-    <main class="containerLogin">
-        <form action="" method="post" class="forms">
-        
-        <div class="fieldForm">
-            <div class="labelName">
-                <label for="userName">
-                    Usuário
-                </label>
-            </div>
+        <header>
+            <p>
+                <img src="./assets/img/header.png" alt="Livraria Digital">
+            </p>
+        </header>
+    
+        <main class="containerLogin">
+            <form action="" method="post" class="forms">
+    
+                <div class="fieldForm">
+                    <fieldset>
+                        <legend>Área de LOGIN</legend>
+    
+                        <div class="inputName">
+                            <input name="user" id="userName" type="text" placeholder="Digite seu usuário" maxlength="300" required>
+                        </div>
+    
+                        <div class="inputPassword">
+                            <input name="password" id="userPassword" type="password" placeholder="Digite sua senha" maxlength="6"
+                                required>
+                        </div>
+    
+                </div>
+    
+                <div class="button">
+                    <input type="button" value="Entrar" onclick="welcome()">
+                </div>
+    
+                </fieldset>
+    
+            </form>
+        </main>
+    
+        <footer>
+            <p> Livraria Digital © Todos os direitos reservados.2021</p>
+        </footer>
 
-            <div class="inputName">
-                <input name="user" id="userName" type="text" placeholder="Digite seu nome" maxlength="300" required>
-            </div>
-        </div>
-            
-        <div class="fieldForm">
-            <div class="labelPassword">
-                <label for="userPassword">
-                    Senha
-                </label>
-            </div>
-            
-            <div class="inputPassword">
-                <input  name="password" id="userPassword" type="password" placeholder="Digite 06 caracteres" maxlength="6" required>
-            </div>
-        </div>
-            
-                
-            <div class="button">
-               <input type="button" value="Acessar" onclick="welcome()">                
-            </div>
-        </form>
-    </main>
-
-    <footer>
-    <p>Livraria Digital © Todos os direitos reservados.2021</p>
-    </footer>
+    </div>
+    
     <script src="./assets/js/app.js"></script>
 </body>
+
 </html>
