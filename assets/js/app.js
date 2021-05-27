@@ -7,6 +7,11 @@ function welcome() {
 
     if (!userName || !userPassword) {
         alert('Você não digitou o seu nome ou sua senha, favor, faça isto antes de continuar.')
+        if (!userName) {
+            document.getElementById('userName').focus()            
+        }else{
+            document.getElementById('userPassword').focus() 
+        }
     }
     else {
         if (userList.indexOf(userName) != -1) {
