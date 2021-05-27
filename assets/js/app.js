@@ -16,6 +16,8 @@ function welcome() {
         } 
         else {
             alert("Este usuário não existe em nossa base de dados.");
+            document.getElementById('userName').value = ""
+            document.getElementById('userPassword').value = ""
         }       
     }
 }
