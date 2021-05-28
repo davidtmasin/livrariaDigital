@@ -25,8 +25,7 @@
     </header>
     <br>
     <br>
-    
-    
+       
 
     <div class="table">
         <main class="container">
@@ -142,6 +141,18 @@
         </main>
     </div>
     
+    <!-- Os dois asides abaixo são para implementar o menu lateral -->
+    <aside id="opened" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        
+        <a href="../../index.html">Sair</a>
+        
+    </aside>    
+
+    <aside id="collapsed">
+        <button class="openbtn" onclick="openNav()">☰</button>
+        <!-- <p><strong>ASIDE</strong>: É uma seção que engloba conteúdos relacionados ao conteúdo principal, como artigos relacionados, biografia do autor e publicidade. Normalmente são representadas como barras laterais.</p> -->
+    </aside>
 
     <footer>
     <p>Livraria Digital © Todos os direitos reservados.2021</p>
@@ -149,5 +160,8 @@
     
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- Meu script para funcionar o sidebar -->
+    <script src="../js/app.js"></script>
 </body>
 </html>

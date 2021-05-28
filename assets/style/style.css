@@ -160,3 +160,74 @@ table{
     background: rgba(0, 0, 0, 0.548);
     font-weight: 700;
 }
+
+
+/* Comandos para realizar o botão lateral */
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-right: -7%;
+}
+
+
+.openbtn {
+  position: absolute; 
+  right: 0; 
+  top: 0;
+
+  font-size: 25px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+
+  transition: all ease .5s;
+}
+
+.openbtn:hover {
+  background-color: #444;
+  transition: all ease .5s;
+}
+
+#collapsed {
+  transition: margin-right .5s;
+  padding: 0;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+  .openbtn {
+      padding: 10px 50px;
+  }
+}
