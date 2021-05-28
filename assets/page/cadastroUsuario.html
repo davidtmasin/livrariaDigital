@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="robots" content="nofollow, noindex" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="stylesheet" href="../style/style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Login - Livraria Digital</title>
 </head>
@@ -15,7 +15,7 @@
 
         <header>
             <p>
-                <img src="./assets/img/header.png" alt="Livraria Digital">
+                <img src="../img/header.png" alt="Livraria Digital">
             </p>
         </header>
     
@@ -24,22 +24,21 @@
     
                 <div class="fieldForm">
                     <fieldset>
-                        <legend>Área de LOGIN</legend>
+                        <legend>Cadastro de Usuário</legend>
     
                         <div class="inputName">
-                            <input name="user" id="userName" type="text" placeholder="USUÁRIO" maxlength="300" required>
+                            <input name="user" id="userName" type="text" placeholder="Digite seu usuário" maxlength="300" required>
                         </div>
     
                         <div class="inputPassword">
-                            <input name="password" id="userPassword" type="password" placeholder="SENHA" maxlength="6"
+                            <input name="password" id="userPassword" type="password" placeholder="Digite sua senha" maxlength="6"
                                 required>
                         </div>
     
                 </div>
     
                 <div class="button">
-                    <input type="button" value="Entrar" onclick="welcome()">
-                    <input type="button" value="Cadastre-se" onclick="registerUser()">
+                    <input type="button" value="Confirmar" onclick="createdUser()">
                 </div>
     
                 </fieldset>
@@ -53,7 +52,7 @@
 
     </div>
     
-    <script src="./assets/js/app.js"></script>
+    <script src="../js/app.js"></script>
 </body>
 
 </html>

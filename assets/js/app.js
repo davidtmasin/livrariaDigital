@@ -6,11 +6,11 @@ function welcome() {
     let userList = ['David', 'Atila', 'Raphael', 'Luis']
 
     if (!userName || !userPassword) {
-        alert('Você não digitou o seu nome ou sua senha, favor, faça isto antes de continuar.')
+        alert('Usuário e/ou senha não informados!')
         if (!userName) {
-            document.getElementById('userName').focus()            
-        }else{
-            document.getElementById('userPassword').focus() 
+            document.getElementById('userName').focus()
+        } else {
+            document.getElementById('userPassword').focus()
         }
     }
     else {
@@ -22,9 +22,34 @@ function welcome() {
             document.getElementById('userPassword').value = ""
         }
         else {
-            alert("Este usuário não existe em nossa base de dados.");
+            alert("Usuário não cadastrado!");
             document.getElementById('userName').value = ""
             document.getElementById('userPassword').value = ""
+            document.getElementById('userName').focus()
         }
     }
+}
+
+function registerUser() {
+    window.location.href = "./assets/page/cadastroUsuario.html";
+}
+
+function createdUser() {
+
+    let userName = document.getElementById('userName').value
+    let userPassword = document.getElementById('userPassword').value
+
+    if (!userName || !userPassword) {
+        alert('Todos os campos são obrigatório!')
+        if (!userName) {
+            document.getElementById('userName').focus()
+        } else {
+            document.getElementById('userPassword').focus()
+        }
+    } else {
+        alert('Usuário criado com sucesso! Efetue o seu login.')
+        window.location.href = "../../index.html";
+
+    }
+
 }
