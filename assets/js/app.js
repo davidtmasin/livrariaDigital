@@ -3,7 +3,7 @@ function welcome() {
 
     let userName = document.getElementById('userName').value
     let userPassword = document.getElementById('userPassword').value
-    let userList = ['David', 'Atila', 'Raphael', 'Luis']
+    let userList = ['David', 'Atila', 'Raphael', 'Luis', 'Xablau']
 
     if (!userName || !userPassword) {
         alert('Usuário e/ou senha não informados!')
